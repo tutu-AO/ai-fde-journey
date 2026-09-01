@@ -1,0 +1,21 @@
+[project]
+name = "ai-fde-journey"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tutu-AO", email = "17alexosei@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=1.2.0",
+    "openai>=3.6.0",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+ai-fde-journey = "ai_fde_journey:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
